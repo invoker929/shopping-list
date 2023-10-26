@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Utility Useage */
+
+/* General */
+body {
+  font-family: "Roboto", sans-serif;
+  background: #5f506b;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  text-decoration: underline;
+  margin: 1rem 0 3rem;
+}
+
+main {
+  font-size: 1.5rem; /*24px*/
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+input {
+  width: min(100%, 600px);
+  font: inherit;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+}
+
+ol {
+  color: #5f506b;
+  list-style: decimal inside;
+}
+
+ol li {
+  background: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+ol li:nth-child(even) {
+  margin: 0.5em 0;
+}
