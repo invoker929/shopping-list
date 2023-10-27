@@ -8,6 +8,10 @@
 }
 
 /* Utility Useage */
+.purchased {
+  text-decoration: line-through;
+  text-decoration-thickness: 0.4rem;
+}
 
 /* General */
 body {
@@ -39,16 +43,30 @@ input {
 }
 
 ol {
-  color: #5f506b;
-  list-style: decimal inside;
+  list-style-position: inside;
 }
 
-ol li {
+ol div.items {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+div.items li {
+  color: #5f506b;
   background: #fff;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
 }
 
-ol li:nth-child(even) {
+div.items span {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+ol div.items:nth-child(even) {
   margin: 0.5em 0;
 }
